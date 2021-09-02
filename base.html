@@ -2,9 +2,11 @@
 <body>
 This content is in the 'parent' object
 
-<esi:include src='/rajesh-yesunathan/esi-query-test/main/esi1.html'$(req.url.qs) />
+<esi:include src="/rajesh-yesunathan/esi-query-test/main/esi1.html?$(req.url.qs)" />
 
-<esi:include src='/rajesh-yesunathan/esi-query-test/main/esi2.html'${req.url.qs} />
+<esi:include src="/rajesh-yesunathan/esi-query-test/main/esi2.html?${req.url.qs}" />
+  1-<esi:vars>"$(req.url.qs)"</esi:vars>
+  <esi:vars>"${req.url.qs}"</esi:vars>2-
   
 </body>
 </html>
